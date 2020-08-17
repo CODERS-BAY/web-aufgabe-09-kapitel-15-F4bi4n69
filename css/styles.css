@@ -1,0 +1,19 @@
+body {
+    background-color: #808080;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-auto-rows: minmax(100px, auto);
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.grid div {
+    box-shadow: black 2px 2px 2px;
+}
+
+.pyramidenkogel {
+}
