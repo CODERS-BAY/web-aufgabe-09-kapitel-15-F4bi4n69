@@ -107,6 +107,7 @@ div iframe {
 
 .flex div p {
     width: 70%;
+    padding-top: 1rem;
 }
 
 .flex div img {
@@ -117,4 +118,11 @@ div iframe {
 .flex div iframe {
     float: right;
     margin-right: 0.5rem;
+}
+
+@media (max-width: 830px){
+    .flex div iframe {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    }
 }
