@@ -1,0 +1,128 @@
+header {
+    text-align: center;
+    height: 50vh;
+    background: 
+    linear-gradient(rgba(170, 170, 170, 1), rgba(199, 199, 199, 0) 5%, rgba(199, 199, 199, 0) 90%, rgba(170, 170, 170, 1)),
+    url(/web-aufgabe-08-kapitel-14-F4bi4n69/img/header.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    padding-top: 1rem;
+    color: rgb(190, 190, 190);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: 'Pattaya', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2::first-letter {
+    color: red;
+    font-size: 120%;
+}
+
+
+/* Navigation */
+nav {
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    position: sticky;
+    border-bottom: solid;
+    top: 0;
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0px 0px 5px 5px rgb(160, 160, 160);
+    border-radius: 2px 2px 5px 5px;
+}
+nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    padding: .5rem;
+}
+.aktuell {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: solid white;
+    border-radius: 15px;
+}
+
+
+/* Link Decoration */
+a:link {color: black;  text-shadow: 1px 1px 1px rgb(245, 245, 245)}
+a:hover {color: rgb(0, 0, 0); text-shadow: 0px 0px 5px red;}
+a:visited {color: black;  text-shadow: 1px 1px 1px rgb(245, 245, 245)}
+a:active {color: rgb(255, 255, 255);  text-shadow: 1px 1px 1px rgb(0, 0, 0)}
+
+
+/* Seite 1 Grid */
+body {
+    background-color: rgb(170, 170, 170);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-around;
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(120px, auto);
+    grid-auto-flow: dense;
+}
+
+.grid div a {
+    text-decoration: none;
+}
+
+div img {
+    box-shadow: 0px 0px 5px black;
+}
+
+div iframe {
+    box-shadow: 0px 0px 3px black;
+}
+
+
+/* Seite 2 Flexbox */
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.flex div {
+    margin: 2rem;
+}
+
+.flex div p {
+    width: 70%;
+    padding-top: 1rem;
+}
+
+.flex div img {
+    float: left;
+    margin-right: 2rem;
+}
+
+.flex div iframe {
+    float: right;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 830px){
+    .flex div iframe {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    }
+}
